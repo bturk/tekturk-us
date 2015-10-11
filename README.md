@@ -1,5 +1,7 @@
 # tekturk-gm v0.10.0
 
+[![Travis](https://img.shields.io/travis/bturk/tekturk-gm.svg)](https://travis-ci.org/bturk/tekturk-gm)
+
 tekturk is intended to be a framework to help workers on Amazon's Mechanical Turk system.
 
 tekturk-gm is a Greasemonkey user script to improve Amazons's site.
