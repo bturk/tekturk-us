@@ -2,7 +2,7 @@
 module.exports = function (grunt) {
 	'use strict';
 
-	var templates = grunt.file.readJSON  ('template/tekturk-gm.json');
+	var templates = grunt.file.readJSON  ('template/tekturk-us.json');
 
 	// Project configuration.
 	grunt.initConfig ({

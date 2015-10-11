@@ -1,6 +1,6 @@
 {
-	"name": "tekturk-gm",
-	"description": "tekturk-gm is a Greasemonkey user script to improve Amazons's site.",
+	"name": "tekturk-us",
+	"description": "tekturk-us is a Greasemonkey user script to improve Amazons's site.",
 	"keywords": [ "turk", "mturk", "turkopticon" ],
 	"version": "0.10.0",
 	"license": "MIT",
