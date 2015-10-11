@@ -1,0 +1,68 @@
+{
+	"headerTemplate": [
+		"<link href=\"//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css\" rel=\"stylesheet\" type=\"text/css\">",
+		"<style type=\"text/css\">",
+			"\tdiv.drop_link { float: left; margin-right: 5px; margin-top: auto; padding-left: 0; width: 15px; height: 15px; border-radius: 50%; }",
+			"\tspan.color_evil, div.drop_link.color_evil { background-color: red; }",
+			"\tspan.color_questionable, div.drop_link.color_questionable { background-color: orange; }",
+			"\tspan.color_ok, div.drop_link.color_ok{ background-color: yellow; }",
+			"\tspan.color_good, div.drop_link.color_good{ background-color: LimeGreen; }",
+			"\tspan.color_unknown, div.drop_link.color_unknown{ background-color: grey; }",
+			
+			"\tdiv.qtip { max-height: 300px; max-width: {{maxWidth}}px; overflow: auto; }",
+			"\tdiv.qtip-content { padding: 0 }",
+			"\tdiv.ui-tooltip.tt-tooltip { padding: 5px; }",
+			"\tul.drop_box { }",
+			"\tul.drop_box, ul.drop_box li.reviews ul { list-style-type: none; padding-left: 0; }",
+
+			"\tul.drop_box li.reviews ul { border-top: 1px solid #aaa; padding: 5px 0; }",
+			"\tul.drop_box li.reviews ul:nth-child(odd) { background-color: #ededed; }",
+			"\tul.drop_box li.reviews ul li { word-wrap: break-word; }",
+			"\t:hover ul.drop_box { display: block; z-index: 150; }",
+			"\ta.name_changed, td.name_changed { color: #e00; }",
+			"\tul.drop_box li { margin: 2px 5px; }",
+			"\tul.drop_box li, ul.drop_box div, ul.drop_box span { font-family: Verdana, Geneva, sans-serif; }",
+			"\tul.drop_box li.rating div.name { display: inline-block; width: 95px; }",
+			"\tul.drop_box li.rating div.number { display: inline-block; }",
+			"\tul.drop_box li.rating div.bar { height: 10px; position: relative; background-color: #999; margin: 0 10px; width: {{barWidth}}px; display: inline-block; }",
+			"\tul.drop_box li.rating div.bar span { display: block; height: 100%; position: relative; overflow: hidden; x: 0; }",
+		"</style>"
+	],
+	"barTemplate": "<div class=\"bar\"><span class=\"{{color}}\" style=\"width: {{width}}px;\"></span></div>",
+	"linkTemplate": "<div data-rid=\"{{id}}\" class=\"drop_link {{color}}\">",
+	"ratingTemplate": [
+		"<ul data-rid=\"{{id}}\" class=\"drop_box\">",
+			"\t<li>Name: <a target=\"_blank\" href=\"{{toUrl}}{{id}}\"{{nc}}>{{newName}}</a></li>",
+			"\t{{nameLine}}",
+			"\t<li class=\"rating\"><div class=\"name\">Fairness:</div>{{fairBar}}<div class=\"number\">{{fair}} / 5</div></li>",
+			"\t<li class=\"rating\"><div class=\"name\">Promptness:</div>{{fastBar}}<div class=\"number\">{{fast}} / 5</div></li>",
+			"\t<li class=\"rating\"><div class=\"name\">Generosity:</div>{{payBar}}<div class=\"number\">{{pay}} / 5</div></li>",
+			"\t<li class=\"rating\"><div class=\"name\">Comminications:</div>{{commBar}}<div class=\"number\">{{comm}} / 5</div></li>",
+			"\t<li>&nbsp;</li>",
+			"\t<li>Ratings based on <a target=\"_blank\" href=\"{{toUrl}}{{id}}\">{{reviewCount}} reviews.</a></li>",
+			"\t<li>Terms of Service violation flags: {{tosFlags}}</li>",
+			"\t<li><a target=\"_blank\" href=\"{{toUrl}}report?requester[amxn_id]={{id}}&requester[amzn_name]={{amazonName}}\">Review requestor</a></li>",
+			"\t{{reviewLine}}",
+		"</ul>"
+	],
+	"origNameTemplate": "<li>Original Name: <a target=\"_blank\" href=\"{{toUrl}}\"{{nc}}>{{oldName}}</a></li>",
+	"noRatingTemplate": [
+		"<ul class=\"drop_box\">",
+			"\t<li>Name: <a target=\"_blank\" href=\"{{toUrl}}{{id}}\">{{newName}}</a></li>",
+			"\t<li>&nbsp;</li>",
+			"\t<li>No Ratings</li>",
+			"\t<li><a target=\"_blank\" href=\"{{toUrl}}report?requester[amxn_id]={{id}}&requester[amzn_name]={{amazonName}}\">Review requestor</a></li>",
+		"</ul>"
+	],
+	"reviewTemplate": [
+		"<ul>",
+			"\t<li class=\"rating\"><div class=\"name\">Fairness:</div>{{fairBar}}<div class=\"number\">{{fair}} / 5</div></li>",
+			"\t<li class=\"rating\"><div class=\"name\">Promptness:</div>{{fastBar}}<div class=\"number\">{{fast}} / 5</div></li>",
+			"\t<li class=\"rating\"><div class=\"name\">Generosity:</div>{{payBar}}<div class=\"number\">{{pay}} / 5</div></li>",
+			"\t<li class=\"rating\"><div class=\"name\">Comminications:</div>{{commBar}}<div class=\"number\">{{comm}} / 5</div></li>",
+			"\t<li>&nbsp;</li>",
+			"\t<li>Date: {{date}}</li>",
+			"\t<li>{{review}}</li>",
+		"</ul>"
+	]
+}
