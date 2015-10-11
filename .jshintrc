@@ -8,6 +8,7 @@
 	"futurehostile": true,
 	"latedef": true,
 	"maxstatements": 20,
+	"maxcomplexity": 9,
 	"noarg": true,
 	"nocomma": true,
 	"nonbsp": true,

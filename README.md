@@ -1,6 +1,11 @@
 # tekturk-gm v0.10.0
 
 [![Travis](https://img.shields.io/travis/bturk/tekturk-gm.svg)](https://travis-ci.org/bturk/tekturk-gm)
+[![Codacy Badge](https://api.codacy.com/project/badge/ae396700daf243c3804179d24c20f6a4)](https://www.codacy.com/app/bturk/tekturk-gm)
+[![Dependency Status](https://david-dm.org/bturk/tekturk-gm.svg?theme=shields.io&style=flat)](https://david-dm.org/bturk/tekturk-gm)
+[![devDependency Status](https://david-dm.org/bturk/tekturk-gm/dev-status.svg?theme=shields.io&style=flat)](https://david-dm.org/bturk/tekturk-gm#info=devDependencies)
+[![GitHub issues](https://img.shields.io/github/issues/bturk/tekturk-gm.svg)](https://github.com/bturk/tekturk-gm/issues)
+[![GitHub license](https://img.shields.io/github/license/bturk/tekturk-gm.svg)](https://github.com/bturk/tekturk-gm/blob/master/LICENSE)
 
 tekturk is intended to be a framework to help workers on Amazon's Mechanical Turk system.
 
