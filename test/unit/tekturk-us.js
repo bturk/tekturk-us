@@ -9,7 +9,7 @@
 			'123456': {
 				name: 'Requestor Name',
 				attrs: {
-					comm: 4.67,
+					comm: 2.67,
 					pay: 3.57,
 					fair: 4.70,
 					fast: 1.92
@@ -68,17 +68,44 @@
 		// jscs:enable requireCamelCaseOrUpperCaseIdentifiers
 	});
 
-	QUnit.test ('hello test', function (assert) {
+	QUnit.test ('wait for ajax calls to finish', function (assert) {
+		var done = assert.async ();
+		setTimeout (function () {
+			var $test = $ ('div.drop_link');
+			$test.qtip ('api').options.content.text.call ($test);
+			assert.ok ( 1 === 1, 'Passed!');
+			done ();
+		}, 50);
+	});
+
+	QUnit.test ('simulate second hover', function (assert) {
 		var done = assert.async ();
 		setTimeout (function () {
 			var $test = $ ('div.drop_link');
 
 			$test.qtip ('api').options.content.text.call ($test);
-			setTimeout (function () {
-				$test.qtip ('api').options.content.text.call ($test);
-				assert.ok ( 1 === 1, 'Passed!');
-				done ();
-			}, 50);
+			assert.ok ( 1 === 1, 'Passed!');
+			done ();
 		}, 50);
 	});
+
+	QUnit.test ('check rating is color_unknown for empty ratings', function (assert) {
+		assert.ok ($ ('div.drop_link[data-rid=567890], div.drop_link[data-rid=345678], div.drop_link[data-rid=456789]').hasClass ('color_unknown'), 'Checking ratings colors');
+	});
+
+	QUnit.test ('check rating is color_evil for evil ratings', function (assert) {
+		assert.ok ($ ('div.drop_link[data-rid=234567]').hasClass ('color_evil'), 'Checking ratings colors');
+	});
+
+	QUnit.test ('check rating is color_ok for ok ratings', function (assert) {
+		assert.ok ($ ('div.drop_link[data-rid=123456]').hasClass ('color_ok'), 'Checking ratings colors');
+	});
+
+	QUnit.test ('validate ratings', function (assert) {
+		var $test = $ ('div.drop_link[data-rid=123456]'),
+			rating = $test.qtip ('api').options.content.text.call ($ ('div.drop_link[data-rid=123456]'));
+
+		assert.notStrictEqual (rating.match (/Fairness.*color_good.*Promptness.*color_evil.*Generosity.*color_ok.*Communications.*color_questionable/), null, 'Checking ratings colors');
+	});
+
 }) ();
