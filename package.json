@@ -17,6 +17,7 @@
 		"grunt-qunit-istanbul": "~0.5.0",
 		"grunt-codacy": "~1.1.0",
 		"grunt-jsdoc": "~1.0.0",
-		"grunt-jscs": "~2.1.0"
+		"grunt-jscs": "~2.1.0",
+		"grunt-coveralls": "~1.0.0"
 	}
 }

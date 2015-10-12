@@ -79,6 +79,11 @@ module.exports = function (grunt) {
 		},
 		codacy: {
 			src: 'coverage/lcov.info'
+		},
+		coveralls: {
+			files: {
+				src: 'coverage/lcov.info'
+			}
 		}
 	});
 
@@ -88,10 +93,11 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks ('grunt-contrib-jshint');
 	grunt.loadNpmTasks ('grunt-qunit-istanbul');
 	grunt.loadNpmTasks ('grunt-codacy');
+	grunt.loadNpmTasks ('grunt-coveralls');
 	grunt.loadNpmTasks ('grunt-jscs');
 	grunt.loadNpmTasks ('grunt-jsdoc');
 
 	// Default task.
 	grunt.registerTask ('default', ['jshint', 'jscs', 'concat', 'qunit', 'uglify', 'jsdoc']);
-	grunt.registerTask ('travis', ['jshint', 'jscs', 'concat', 'qunit', 'codacy' ]);
+	grunt.registerTask ('travis', ['jshint', 'jscs', 'concat', 'qunit', 'codacy', 'coveralls' ]);
 };
