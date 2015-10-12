@@ -78,9 +78,6 @@ module.exports = function (grunt) {
 			all: ['<%= files.test %>']
 		},
 		codacy: {
-			options: {
-				token: '823801c5ab1c4cb198ea460348a07099'
-			},
 			src: 'coverage/lcov.info'
 		}
 	});
@@ -95,5 +92,6 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks ('grunt-jsdoc');
 
 	// Default task.
-	grunt.registerTask ('default', ['jshint', 'jscs', 'concat', 'qunit', 'codacy', 'uglify', 'jsdoc']);
+	grunt.registerTask ('default', ['jshint', 'jscs', 'concat', 'qunit', 'uglify', 'jsdoc']);
+	grunt.registerTask ('travis', ['jshint', 'jscs', 'concat', 'qunit', 'codacy' ]);
 };
