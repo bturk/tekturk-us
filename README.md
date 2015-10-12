@@ -58,6 +58,7 @@ Currently in development status
  * [JSHint](http://jshint.com/)
  * [JSCS](http://jscs.info/)
  * [JSDoc](http://usejsdoc.org/)
+ * [QUnit](http://qunitjs.com/)
 
 ## Creators
 

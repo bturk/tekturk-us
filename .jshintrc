@@ -8,7 +8,7 @@
 	"futurehostile": true,
 	"latedef": true,
 	"maxstatements": 20,
-	"maxcomplexity": 9,
+	"maxcomplexity": 10,
 	"noarg": true,
 	"nocomma": true,
 	"nonbsp": true,
@@ -27,6 +27,6 @@
 		"it": true,
 		"beforeEach": true,
 		"expect": true,
-		"TotalTurk": true
+		"QUnit": true
 	}
 }

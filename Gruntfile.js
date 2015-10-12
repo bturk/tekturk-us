@@ -23,6 +23,8 @@ module.exports = function (grunt) {
 			'// ==/UserScript==\n\n',
 		files: {
 			js: 'lib/**/*.js',
+			jsTest: 'test/**/*.js',
+			test: 'test/**/*.html'
 		},
 		// Task configuration.
 		concat: {
@@ -50,12 +52,12 @@ module.exports = function (grunt) {
 			options: {
 				jshintrc: true
 			},
-			src: ['Gruntfile.js', '<%= files.js %>']
+			src: ['Gruntfile.js', '<%= files.js %>', '<%= files.jsTest %>']
 		},
 		jscs: {
-			src: ['<%= files.js%>' ],
+			src: ['<%= files.js%>', '<%= files.jsTest %>' ],
 			options: {
-				config: ".jscsrc",
+				config: '.jscsrc',
 				verbose: true
 			}
 		},
@@ -64,6 +66,22 @@ module.exports = function (grunt) {
 			options: {
 				destination: 'dist/doc'
 			}
+		},
+		qunit: {
+			options: {
+				coverage: {
+					src: ['<%= files.js %>'],
+					instrumentedFiles: 'temp/',
+					lcovReport: 'dist'
+				}
+			},
+			all: ['<%= files.test %>']
+		},
+		codacy: {
+			options: {
+				token: 'ae396700daf243c3804179d24c20f6a4'
+			},
+			src: 'dist/lcov.info'
 		}
 	});
 
@@ -71,10 +89,11 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks ('grunt-contrib-concat');
 	grunt.loadNpmTasks ('grunt-contrib-uglify');
 	grunt.loadNpmTasks ('grunt-contrib-jshint');
-	grunt.loadNpmTasks ('grunt-contrib-less');
-	grunt.loadNpmTasks ("grunt-jscs");
-	grunt.loadNpmTasks ("grunt-jsdoc");
+	grunt.loadNpmTasks ('grunt-qunit-istanbul');
+	grunt.loadNpmTasks ('grunt-codacy');
+	grunt.loadNpmTasks ('grunt-jscs');
+	grunt.loadNpmTasks ('grunt-jsdoc');
 
 	// Default task.
-	grunt.registerTask ('default', ['jshint', 'jscs', 'concat', 'uglify', 'jsdoc']);
+	grunt.registerTask ('default', ['jshint', 'jscs', 'qunit', 'codacy', 'concat', 'uglify', 'jsdoc']);
 };
