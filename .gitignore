@@ -1,3 +1,4 @@
 .grunt
 dist
 node_modules
+coverage

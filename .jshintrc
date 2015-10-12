@@ -22,6 +22,7 @@
 	"validthis": true,
 	"browser": true,
 	"globals": {
+		"ttConfig": true,
 		"$": true,
 		"describe": true,
 		"it": true,

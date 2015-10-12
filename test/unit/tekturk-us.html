@@ -20,7 +20,7 @@
 			<tr>
 				<td class="capsule_field_title">Requester:&nbsp;&nbsp;</td>
 				<td class="capsule_field_text" width="100%">
-						<a href="/mturk/searchbar?selectedSearchType=hitgroups&amp;requesterId=234567">Requestor Name</a>
+						<a href="/mturk/searchbar?selectedSearchType=hitgroups&amp;requesterId=123456">Requestor Name</a>
 				</td>
 			</tr>
 			<tr>
@@ -29,7 +29,27 @@
 						<a href="/mturk/searchbar?selectedSearchType=hitgroups&amp;requesterId=234567">Requestor Name</a>
 				</td>
 			</tr>
+			<tr>
+				<td class="capsule_field_title">Requester:&nbsp;&nbsp;</td>
+				<td class="capsule_field_text" width="100%">
+						<a href="/mturk/searchbar?selectedSearchType=hitgroups&amp;requesterId=456789">Requestor Name</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="capsule_field_title">Requester:&nbsp;&nbsp;</td>
+				<td class="capsule_field_text" width="100%">
+						<a href="/mturk/searchbar?selectedSearchType=hitgroups&amp;requesterId=">Requestor Name</a>
+				</td>
+			</tr>
 		</table>
+		<form name="hitForm" method="GET" action="/mturk/accept" enctype="multipart/form-data" onsubmit="return globalFieldList.validateAll()">
+			<input name="requesterId" value="123456">
+			<table>
+				<tr>
+					<td class="capsule_field_text" width="100%">Requestor Name</td>
+				</tr>
+			</table>
+		</form>
 		<form name="hitForm" method="GET" action="/mturk/accept" enctype="multipart/form-data" onsubmit="return globalFieldList.validateAll()">
 			<input name="requesterId" value="345678">
 			<table>
@@ -38,11 +58,19 @@
 				</tr>
 			</table>
 		</form>
+		<form name="hitForm" method="GET" action="/mturk/accept" enctype="multipart/form-data" onsubmit="return globalFieldList.validateAll()">
+			<input name="requesterId" value="567890">
+			<table>
+				<tr>
+					<td class="capsule_field_text" width="100%">Requestor Name</td>
+				</tr>
+			</table>
+		</form>
 		<script src="http://code.jquery.com/qunit/qunit-1.19.0.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mockjax/1.6.2/jquery.mockjax.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js"></script>
-		<script src="../../lib/tekturk-us.js"></script>
+		<script src="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.js"></script>
+		<script src="../../dist/tekturk-us.js"></script>
 		<script src="tekturk-us.js"></script>
 	</body>
 </html>

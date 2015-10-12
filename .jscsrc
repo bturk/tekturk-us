@@ -109,7 +109,9 @@
 		"beforeOpeningRoundBrace": true,
 		"beforeOpeningCurlyBrace": true
 	},
-	"requireSpacesInsideArrayBrackets": "all",
+	"requireSpacesInsideArrayBrackets": {
+		"allExcept": [ "[", "]", "{", "}" ]
+	},
 	"requireSpacesInsideObjectBrackets": "all",
 	"requireSpread": true,
 	//"requireTemplateStrings": true,

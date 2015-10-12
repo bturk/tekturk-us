@@ -5,9 +5,9 @@
 			"\tdiv.drop_link { float: left; margin-right: 5px; margin-top: auto; padding-left: 0; width: 15px; height: 15px; border-radius: 50%; }",
 			"\tspan.color_evil, div.drop_link.color_evil { background-color: red; }",
 			"\tspan.color_questionable, div.drop_link.color_questionable { background-color: orange; }",
-			"\tspan.color_ok, div.drop_link.color_ok{ background-color: yellow; }",
-			"\tspan.color_good, div.drop_link.color_good{ background-color: LimeGreen; }",
-			"\tspan.color_unknown, div.drop_link.color_unknown{ background-color: grey; }",
+			"\tspan.color_ok, div.drop_link.color_ok { background-color: yellow; }",
+			"\tspan.color_good, div.drop_link.color_good { background-color: LimeGreen; }",
+			"\tspan.color_unknown, div.drop_link.color_unknown { background-color: grey; }",
 			
 			"\tdiv.qtip { max-height: 300px; max-width: {{maxWidth}}px; overflow: auto; }",
 			"\tdiv.qtip-content { padding: 0 }",

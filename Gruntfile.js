@@ -36,7 +36,7 @@ module.exports = function (grunt) {
 			},
 			files: {
 				src: '<%= files.js %>',
-				dest: 'dist/<%= pkg.name %>.<%= pkg.version %>.js'
+				dest: 'dist/<%= pkg.name %>.js'
 			}
 		},
 		uglify: {
@@ -44,8 +44,8 @@ module.exports = function (grunt) {
 				banner: '<%= banner %>'
 			},
 			files: {
-				src: 'dist/<%= pkg.name %>.<%= pkg.version %>.js',
-				dest: 'dist/<%= pkg.name %>.<%= pkg.version %>.min.js'
+				src: 'dist/<%= pkg.name %>.js',
+				dest: 'dist/<%= pkg.name %>.min.js'
 			}
 		},
 		jshint: {
@@ -70,18 +70,18 @@ module.exports = function (grunt) {
 		qunit: {
 			options: {
 				coverage: {
-					src: ['<%= files.js %>'],
+					src: 'dist/<%= pkg.name %>.js',
 					instrumentedFiles: 'temp/',
-					lcovReport: 'dist'
+					lcovReport: 'coverage'
 				}
 			},
 			all: ['<%= files.test %>']
 		},
 		codacy: {
 			options: {
-				token: 'ae396700daf243c3804179d24c20f6a4'
+				token: '823801c5ab1c4cb198ea460348a07099'
 			},
-			src: 'dist/lcov.info'
+			src: 'coverage/lcov.info'
 		}
 	});
 
@@ -95,5 +95,5 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks ('grunt-jsdoc');
 
 	// Default task.
-	grunt.registerTask ('default', ['jshint', 'jscs', 'qunit', 'codacy', 'concat', 'uglify', 'jsdoc']);
+	grunt.registerTask ('default', ['jshint', 'jscs', 'concat', 'qunit', 'codacy', 'uglify', 'jsdoc']);
 };
