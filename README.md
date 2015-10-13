@@ -69,4 +69,4 @@ Currently in development status
 
 ## Copyright and license
 
-Code and documentation copyright 2011-2015 Robert E. Adams. Released under [the MIT license](https://github.com/bturk/tekturk-us/blob/master/LICENSE).
+Code and documentation copyright 2011-2015 Robert E. Adams. Released under [the MIT license](https://github.com/bturk/tekturk-us/blob/master/LICENSE-MIT).
