@@ -21,13 +21,8 @@
 	"varstmt": false,
 	"validthis": true,
 	"browser": true,
+	"jquery": true,
+	"qunit": true,
 	"globals": {
-		"ttConfig": true,
-		"$": true,
-		"describe": true,
-		"it": true,
-		"beforeEach": true,
-		"expect": true,
-		"QUnit": true
 	}
 }
