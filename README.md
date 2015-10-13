@@ -2,7 +2,7 @@
 
 [![Travis](https://img.shields.io/travis/bturk/tekturk-us.svg)](https://travis-ci.org/bturk/tekturk-us)
 [![Coverage Status](https://coveralls.io/repos/bturk/tekturk-us/badge.svg?branch=master&service=github)](https://coveralls.io/github/bturk/tekturk-us?branch=master)
-[![Codacy](https://img.shields.io/codacy/ae396700daf243c3804179d24c20f6a4.svg)](https://www.codacy.com/app/bturk/tekturk-g)
+[![Codacy](https://img.shields.io/codacy/ae396700daf243c3804179d24c20f6a4.svg)](https://www.codacy.com/app/bturk/tekturk-us/dashboard)
 [![Dependency Status](https://david-dm.org/bturk/tekturk-us.svg?theme=shields.io&style=flat)](https://david-dm.org/bturk/tekturk-us)
 [![devDependency Status](https://david-dm.org/bturk/tekturk-us/dev-status.svg?theme=shields.io&style=flat)](https://david-dm.org/bturk/tekturk-us#info=devDependencies)
 [![GitHub issues](https://img.shields.io/github/issues/bturk/tekturk-us.svg)](https://github.com/bturk/tekturk-us/issues)
