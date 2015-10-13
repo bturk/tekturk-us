@@ -2,11 +2,11 @@
 
 [![Travis](https://img.shields.io/travis/bturk/tekturk-us.svg)](https://travis-ci.org/bturk/tekturk-us)
 [![Coverage Status](https://coveralls.io/repos/bturk/tekturk-us/badge.svg?branch=master&service=github)](https://coveralls.io/github/bturk/tekturk-us?branch=master)
-[![Codacy](https://img.shields.io/codacy/ae396700daf243c3804179d24c20f6a4.svg)](https://www.codacy.com/app/bturk/tekturk-g)
+[![Codacy](https://img.shields.io/codacy/ae396700daf243c3804179d24c20f6a4.svg)](https://www.codacy.com/app/bturk/tekturk-us/dashboard)
 [![Dependency Status](https://david-dm.org/bturk/tekturk-us.svg?theme=shields.io&style=flat)](https://david-dm.org/bturk/tekturk-us)
 [![devDependency Status](https://david-dm.org/bturk/tekturk-us/dev-status.svg?theme=shields.io&style=flat)](https://david-dm.org/bturk/tekturk-us#info=devDependencies)
 [![GitHub issues](https://img.shields.io/github/issues/bturk/tekturk-us.svg)](https://github.com/bturk/tekturk-us/issues)
-[![GitHub license](https://img.shields.io/github/license/bturk/tekturk-us.svg)](https://github.com/bturk/tekturk-us/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/bturk/tekturk-us.svg)](https://github.com/bturk/tekturk-us/blob/master/LICENSE-MIT)
 
 tekturk is intended to be a framework to help workers on Amazon's Mechanical Turk system.
 
@@ -37,7 +37,7 @@ Currently in development status
  	* Works on more pages
  	* Visual enhancments
 
-### Goals
+## Goals
 
  * Overridable settings (rating colors, etc)
  * HIT Database
@@ -48,10 +48,11 @@ Currently in development status
 
 * [Source Repository](https://github.com/bturk/tekturk-us)
 
-### Development Dependencies:
+## Development Dependencies:
 
  * [jQuery](https://jquery.com/)
  * [Tapermonkey](https://tampermonkey.net/)
+ * [Greasemonkey](http://www.greasespot.net/)
  * [Node.js](https://nodejs.org/en/)
  * [Grunt](http://gruntjs.com/)
  * [JSHint](http://jshint.com/)
@@ -67,4 +68,4 @@ Currently in development status
 
 ## Copyright and license
 
-Code and documentation copyright 2011-2015 Robert E. Adams. Released under [the MIT license](https://github.com/bturk/tekturk-us/blob/master/LICENSE).
+Code and documentation copyright 2011-2015 Robert E. Adams. Released under [the MIT license](https://github.com/bturk/tekturk-us/blob/master/LICENSE-MIT).

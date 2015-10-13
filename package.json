@@ -3,10 +3,26 @@
 	"description": "tekturk-us is a Greasemonkey user script to improve Amazons's site.",
 	"keywords": [ "turk", "mturk", "turkopticon" ],
 	"version": "0.10.0",
-	"license": "MIT",
-	"repository": "bturk/tekturk-us",
+	"author": {
+		"name": "Robert E. Adams",
+		"email": "bobbymcgee625@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "bturk/tekturk-us"
+	},
+	"bugs": {
+		"url": "https://github.com/bturk/tekturk-us/issues"
+	},
+	"licenses": [{
+		"type": "MIT",
+		"url": "https://github.com/bturk/tekturk-us/blob/master/LICENSE-MIT"
+	}],
 	"engines": {
 		"node": ">= 0.12.0"
+	},
+	"scripts": {
+		"test": "grunt qunit"
 	},
 	"devDependencies": {
 		"grunt": "~0.4.5",

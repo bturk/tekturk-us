@@ -103,7 +103,7 @@
 
 	QUnit.test ('validate ratings', function (assert) {
 		var $test = $ ('div.drop_link[data-rid=123456]'),
-			rating = $test.qtip ('api').options.content.text.call ($ ('div.drop_link[data-rid=123456]'));
+			rating = $test.qtip ('api').options.content.text.call ($test);
 
 		assert.notStrictEqual (rating.match (/Fairness.*color_good.*Promptness.*color_evil.*Generosity.*color_ok.*Communications.*color_questionable/), null, 'Checking ratings colors');
 	});
