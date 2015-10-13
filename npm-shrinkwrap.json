@@ -614,6 +614,17 @@
         }
       }
     },
+    "grunt-contrib-clean": {
+      "version": "0.6.0",
+      "from": "grunt-contrib-clean@>=0.6.0 <0.7.0",
+      "resolved": "https://registry.npmjs.org/grunt-contrib-clean/-/grunt-contrib-clean-0.6.0.tgz",
+      "dependencies": {
+        "rimraf": {
+          "version": "2.2.8",
+          "from": "rimraf@>=2.2.1 <2.3.0"
+        }
+      }
+    },
     "grunt-contrib-concat": {
       "version": "0.5.1",
       "from": "https://registry.npmjs.org/grunt-contrib-concat/-/grunt-contrib-concat-0.5.1.tgz",

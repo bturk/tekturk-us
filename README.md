@@ -39,9 +39,7 @@ Currently in development status
 
 ### Goals
 
-* User Script:
-	 * Provide ability to copy hits to clipboard in a variety of formats for sharing
-	 * Overridable settings (rating colors, etc)
+ * Overridable settings (rating colors, etc)
  * HIT Database
  * HIT Statistics
  * HIT Export

@@ -27,6 +27,7 @@ module.exports = function (grunt) {
 			test: 'test/**/*.html'
 		},
 		// Task configuration.
+		clean: [ 'dist', '.coverage' ],
 		concat: {
 			options: {
 				banner: '<%= banner %>',
@@ -55,7 +56,7 @@ module.exports = function (grunt) {
 			src: ['Gruntfile.js', '<%= files.js %>', '<%= files.jsTest %>']
 		},
 		jscs: {
-			src: ['<%= files.js%>', '<%= files.jsTest %>' ],
+			src: ['<%= files.js %>', '<%= files.jsTest %>' ],
 			options: {
 				config: '.jscsrc',
 				verbose: true
@@ -72,22 +73,23 @@ module.exports = function (grunt) {
 				coverage: {
 					src: 'dist/<%= pkg.name %>.js',
 					instrumentedFiles: 'temp/',
-					lcovReport: 'coverage'
+					lcovReport: '.coverage'
 				}
 			},
 			all: ['<%= files.test %>']
 		},
 		codacy: {
-			src: 'coverage/lcov.info'
+			src: '.coverage/lcov.info'
 		},
 		coveralls: {
 			files: {
-				src: 'coverage/lcov.info'
+				src: '.coverage/lcov.info'
 			}
 		}
 	});
 
 	// These plugins provide necessary tasks.
+	grunt.loadNpmTasks ('grunt-contrib-clean');
 	grunt.loadNpmTasks ('grunt-contrib-concat');
 	grunt.loadNpmTasks ('grunt-contrib-uglify');
 	grunt.loadNpmTasks ('grunt-contrib-jshint');
