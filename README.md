@@ -37,7 +37,7 @@ Currently in development status
  	* Works on more pages
  	* Visual enhancments
 
-### Goals
+## Goals
 
 * User Script:
 	 * Provide ability to copy hits to clipboard in a variety of formats for sharing
@@ -50,7 +50,7 @@ Currently in development status
 
 * [Source Repository](https://github.com/bturk/tekturk-us)
 
-### Development Dependencies:
+## Development Dependencies:
 
  * [jQuery](https://jquery.com/)
  * [Tapermonkey](https://tampermonkey.net/)
