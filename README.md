@@ -6,7 +6,7 @@
 [![Dependency Status](https://david-dm.org/bturk/tekturk-us.svg?theme=shields.io&style=flat)](https://david-dm.org/bturk/tekturk-us)
 [![devDependency Status](https://david-dm.org/bturk/tekturk-us/dev-status.svg?theme=shields.io&style=flat)](https://david-dm.org/bturk/tekturk-us#info=devDependencies)
 [![GitHub issues](https://img.shields.io/github/issues/bturk/tekturk-us.svg)](https://github.com/bturk/tekturk-us/issues)
-[![GitHub license](https://img.shields.io/github/license/bturk/tekturk-us.svg)](https://github.com/bturk/tekturk-us/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/bturk/tekturk-us.svg)](https://github.com/bturk/tekturk-us/blob/master/LICENSE-MIT)
 
 tekturk is intended to be a framework to help workers on Amazon's Mechanical Turk system.
 
